@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriptions</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+        .subscription-plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .subscription-plan {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .subscription-plan h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .subscription-plan p {
+            color: #666;
+        }
+        .subscription-plan button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .subscription-plan button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose a Subscription Plan</h1>
+        <div class="subscription-plans">
+            <div class="subscription-plan">
+                <h2>Standard Subscription</h2>
+                <p>Price: $100 for 3 months</p>
+                <p>Get access to normal features and benefits.</p>
+                <button onclick="window.location.href='https://buy.stripe.com/test_4gweYe4VYe08bte6oq'">Subscribe</button>
+            </div>
+            <div class="subscription-plan">
+                <h2>Enterprise Subscription</h2>
+                <p>Price: $599 for 6 months</p>
+                <p>Unlock all benefits and access advanced features.</p>
+                <button onclick="window.location.href='https://buy.stripe.com/test_cN217oagi1dm8h2fYZ'">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
